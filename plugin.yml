@@ -1,0 +1,82 @@
+main: me.OscarKoala.GlitchTalePlugin.GlitchTalePlugin
+name: GlitchTalePlugin
+author: OscarKoala
+version: 1.5.0
+api-version: 1.21
+depend: [ProtocolLib]
+softdepend: [SkinsRestorer, SkinsRestorerX, DiscordSRV, Discord]
+load: POSTWORLD
+
+commands:
+  usemagic:
+    usage: /usemagic
+    description: Command to use glitchtale magic.
+    permission: glitchtale.usemagic
+  souldescription:
+    usage: /souldescription
+    description: Command to get your soul description.
+    permission: glitchtale.souldescription
+  regeneratesoul:
+    usage: /regeneratesoul
+    description: Command to get your soul regenerated.
+    permission: glitchtale.regeneratesoul
+  powerselection:
+    usage: /powerselection
+    description: Command to select your power.
+    permission: glitchtale.powerselection
+  setlove:
+    usage: /setlove
+    description: sets love
+    permission: glitchtale.setlove
+  nextlife:
+    usage: /nextlife
+    description: Sends you to your next life
+    permission: glitchtale.nextlife
+  glitchtaleresourcepack:
+    usage: /glitchtaleresourcepack
+    description: Sends you the GT RP.
+    permission: glitchtale.resourcepack
+    aliases: gtrp
+  sethate:
+    usage: /sethate
+    description: Sets hate
+    permission: glitchtale.setlove
+  setinverted:
+    usage: /setinverted
+    description: sets inverted
+    permission: glitchtale.setlove
+  gtdebug:
+    usage: /gtdebug
+    description: debug command
+    permission: glitchtale.debug
+  showsoul:
+    usage: /showsoul
+    description: Show your soul to the world
+    permission: glitchtale.showsoul
+  gtskin:
+    usage: /gtskin <clear/set/mode>
+    description: Sets specific skins depending on your soul state
+    permission: glitchtale.skin
+permissions:
+  glitchtale.showsoul:
+    default: true
+  glitchtale.debug:
+    default: op
+  glitchtale.setlove:
+    default: op
+  glitchtale.resourcepack:
+    default: true
+  glitchtale.nextlife:
+    default: true
+  glitchtale.souldescription:
+    default: true
+  glitchtale.usemagic:
+    default: true
+  glitchtale.powerselection:
+    default: true
+  glitchtale.skin:
+    default: true
+  glitchtale.regeneratesoul:
+    default: op
+  glitchtale.rpskip:
+    default: false

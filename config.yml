@@ -1,0 +1,130 @@
+#This is a version variable, please do not change this, as it might break the plugin
+version: 5
+
+#Gamerules==============================================================================================================
+
+#Setting this to true will make some powers like mines and slashes able to destroy their surroundings
+#Default: false
+ambient-destruction: false
+
+#Setting this variable to true will unlock unofficial powers in the plugin
+#Default: false
+unofficial-powers: false
+
+#Enables powers that haven't appeared in any animations but have appeared in the public stories
+#Default: true
+story-powers: true
+
+#Enables powers that haven't appeared in any animations nor stories yet but have been discussed in the spoiler channel of the official discord
+#Default: false
+spoiler-powers: false
+
+#If true, merged powers will lock you out of using the component powers (e.g. Teleportation will lock you out of gravity and time manip)
+#Default: true
+merged-power-lock: true
+
+#Cosmetic===============================================================================================================
+
+#Whether names adapt to the player's soul color/style. (Could conflict with other nickname plugins)
+#Default: true
+colored-names: true
+
+#Nextlife config========================================================================================================
+
+#Controls /nextlife's limitations.
+#Allowed values:
+#  FULL: Any dual trait and determination souls are available for selection.
+#  RANDOM: Any form of trait selection is completely disabled. Using it only rolls your soul randomly
+#  PARTIAL: Simple trait selection and random selection is available, dual traits and determination souls are not.
+#  DISABLED: Nextlife is not allowed in this server.
+#Default: FULL
+reset-mode: FULL
+
+#Whether a player's soul will reset upon death
+#Default: false
+reset-soul-on-death: false
+
+#Whether everyone has every possibility unlocked from the start or the traits need to be discovered first
+#Default: true
+reset-has-memory: true
+
+#Controls whether using /nextlife will have a higher chance of giving you a trait you haven't had.
+#Default: true
+reset-randomness-aid: true
+
+#Love requirement needed to use /nextlife (setting it outside the range [1,20] will disable the requirement)
+#Default: 15
+reset-love-requirement: 15
+
+#Absorbed souls requirement needed to use /nextlife (setting it to 0 or below will disable the requirement)
+#Default: 1
+reset-soul-requirement: 1
+
+#Whether a determination arnicite heart is needed to use /nextlife
+#Default: true
+reset-arnicite-requirement: true
+
+#Diversity config=======================================================================================================
+
+#Max amount of determination souls allowed per server (-1 for infinite)
+#Default: -1
+max-determination-souls-allowed: -1
+
+#Max amount of bête noires allowed per server (-1 for infinite)
+#Default: 1
+max-bete-noires-allowed: 1
+
+#Max amount of inverted souls allowed per server (-1 for infinite)
+#Default: 6
+max-inverted-allowed: 6
+
+#Max amount of dual traits allowed per server (-1 for infinite)
+#Default: -1
+max-dual-traited-allowed: -1
+
+#Chance of appearing as a traitless soul when regenerating
+#Default: 2
+traitless-population-percent: 2
+
+#Whether bête noire's souls reset on death
+#Default: true
+bete-noire-death-reset: true
+
+#Chance for dual traits to collapse to only one trait upon inversion. Set to 0 to disable, set to 100 for it to always happen.
+#Default: 80
+inversion-destroys-dual-chance: 80
+
+#Softdepends============================================================================================================
+
+#Discord================================================================================================================
+
+#For these config options to work, you need to have the DiscordSRV plugin in the server
+
+#Set this to the channel id where you'll receive updates about people changing their souls, leveling up etc.
+#Default: -1 to disable
+discord-gt-channel: "-1"
+
+#Set to false if soul regenerations shouldn't be notified in the discord
+#Default: true
+show-regens-in-discord: true
+
+#Set to false if leveling up shouldn't be notified in the discord
+#Default: true
+show-levelup-in-discord: true
+
+#Syncs roles that have the trait names with the discord server (if set)
+#IMPORTANT: This will only work if they've synced their minecraft account to their discord account
+#Default: true
+sync-roles: true
+
+#Role id for traits, -1 to disable
+determination-role: "-1"
+bravery-role: "-1"
+justice-role: "-1"
+kindness-role: "-1"
+patience-role: "-1"
+integrity-role: "-1"
+perseverance-role: "-1"
+traitless-role: "-1"
+monster-role: "-1"
+dual-traited-role: "-1"

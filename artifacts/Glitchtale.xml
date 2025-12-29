@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Glitchtale">
+    <output-path>$PROJECT_DIR$/out/artifacts/Glitchtale</output-path>
+    <root id="archive" name="Glitchtale.jar">
+      <element id="module-output" name="GlitchTalePlugin-1.5.0-1.20.2.jar.src" />
+      <element id="dir-copy" path="$PROJECT_DIR$" />
+    </root>
+  </artifact>
+</component>
